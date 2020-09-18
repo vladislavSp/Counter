@@ -1,0 +1,9 @@
+.App {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adder__input {
+  text-align: center;
+}
