@@ -2,6 +2,8 @@ import React from "react";
 
 export const Counter = ({initValue, onChangeValue, minValue, maxValue, onInputChange, onFocusChange}) => {
   return <React.Fragment>
+    <p>Минимальное значение: {minValue}</p>
+    <p>Максимальное значение: {maxValue}</p>
     <button className="btn__minus" name="minus" onClick={onChangeValue}>-</button>
     <input
       className="adder__input"
