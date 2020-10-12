@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Counter } from './Counter.jsx';
 
-class App extends Component {
+export class ClassComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   handleInputChange(evt) {
-    let {minValue, maxValue} = this.state; 
+    let {minValue, maxValue} = this.state;
     let value = parseInt(evt.target.value);
 
     if (value > maxValue) return;
@@ -92,5 +92,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
